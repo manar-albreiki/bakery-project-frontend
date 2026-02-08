@@ -1,0 +1,545 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+.container {
+    width: 70%;
+    margin: 0 auto;
+
+}
+
+section {
+    /* height: 100vh; */
+    padding-top: 90px;
+    padding-bottom: 90px;
+    width: auto;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    top: 0px;
+    background-color: white;
+}
+
+nav figure {
+    float: left;
+    height: 48px;
+}
+
+nav figure img {
+    height: 100%;
+    width: 100%;
+}
+
+.nav-links {
+    float: right;
+    padding: 10px;
+    font-family: "Alegreya Sans";
+    font-size: 20px;
+    color: #8e7754;
+
+
+}
+
+.nav-links li {
+    display: inline-block;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+}
+
+.nav-links li a {
+    color: #595959;
+}
+
+.clear-float {
+    clear: both;
+}
+
+.home {
+    background-image: url("../image/home-background.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.home header {
+    width: 50%;
+    margin: 400px auto;
+    text-align: center;
+    color: #fff;
+    z-index: 2;
+    position: relative;
+}
+
+.home .layer {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.home p {
+    color: rgba(255, 255, 255, .92);
+    font-size: 22px;
+
+}
+
+.home h1 {
+    color: #fff;
+    font-size: 58px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-weight: 400;
+}
+
+.learn-more,
+.contact-us {
+    margin-top: 30px;
+    margin-left: 12px;
+    margin-left: 12px;
+    border: 2px solid transparent;
+    padding: 15px 28px;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 4px;
+    color: #fff;
+}
+
+.learn-more {
+    background-color: #8e7754;
+}
+
+.learn-more:hover {
+    background-color: white;
+    color: black;
+}
+
+.contact-us {
+    color: #fff;
+    border-color: #fff;
+    background-color: transparent;
+}
+
+.contact-us:hover {
+    background-color: white;
+    color: black;
+}
+
+.who {
+    background: #fff;
+
+    overflow: hidden;
+}
+
+.who figure {
+    float: left;
+    width: 45%;
+    padding: 100px 15px;
+    margin-right: 20px;
+
+}
+
+.who figure img {
+    width: 100%;
+    height: 100%;
+}
+
+.who-details {
+    float: right;
+    width: 45%;
+
+
+}
+
+.who-details h2 {
+    font-family: "Alegreya";
+    font-size: 32px;
+    color: #303030;
+    margin: 25px;
+}
+
+.who-details p {
+    margin-bottom: 20px;
+    font-family: 'Open Sans', arial;
+    font-weight: 400;
+    color: #686868;
+    line-height: 1.86em;
+}
+
+.who-details li {
+    display: block;
+    padding-left: 56px;
+    margin-bottom: 2px;
+    padding: 15px 0;
+    color: #686868;
+    font-size: 17px;
+    font-family: "Alegreya Sans";
+}
+
+.location {
+    background: #f8f8f8;
+
+}
+
+.location figure {
+    float: right;
+
+    width: 45%;
+
+}
+
+.location figure img {
+    width: 100%;
+    height: 100%;
+}
+
+.location-details {
+    float: left;
+    width: 45%;
+
+
+}
+
+.location-details h2 {
+    font-family: "Alegreya";
+    font-size: 32px;
+    color: #303030;
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+
+.location-details p {
+    margin-bottom: 20px;
+    color: #686868;
+    font-size: 17px;
+    line-height: 1.86em;
+}
+
+.baking {
+    background: #fff;
+
+}
+
+.baking-details {
+    float: left;
+    padding: 0px 20px 0px 15px;
+    width: 33.33333333%;
+}
+
+.baking-details figure img {
+    width: 100%;
+    height: 100%;
+}
+
+.baking-title {
+    margin-bottom: 60px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.baking-title h3 {
+    font-family: "Alegreya";
+    font-size: 30px;
+    color: #303030;
+    line-height: 1.38em;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.baking-title {
+    font-size: 17px;
+    color: #888;
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+.baking-details h4 {
+    text-align: center;
+    font-family: "Alegreya";
+    font-size: 22px;
+    margin-bottom: 18px;
+    margin-top: 30px;
+    font-weight: 400;
+
+}
+
+.baking-details p {
+    line-height: 1.86em;
+    text-align: center;
+    font-weight: 400;
+    color: #686868;
+    font-size: 17px;
+}
+
+.contact-information {
+    background: #f8f8f8;
+
+}
+
+.contact-details {
+    float: left;
+    width: 45%;
+
+}
+
+.contact-map {
+    float: right;
+    width: 45%;
+
+
+}
+
+.contact-map iframe {
+    width: 100%;
+}
+
+
+.contact-details h2 {
+    font-family: "Alegreya";
+    font-size: 32px;
+    color: #303030;
+    line-height: 1.38em;
+    margin-bottom: 40px;
+
+}
+
+.contact-details p {
+    font-size: 17px;
+    line-height: 1.86em;
+    margin-bottom: 20px;
+    font-weight: 400;
+    color: #686868;
+}
+
+.contact-details li {
+    border: 0;
+    margin: 10px 0;
+    color: #686868;
+    font-family: "Alegreya Sans";
+    font-size: 17px;
+
+}
+
+.contact-details li i {
+    color: #fff;
+    background: #aaa;
+    background-color: #8e7754;
+}
+
+footer {
+    background-color: #403d38;
+    color: #fff;
+    font-size: 18px;
+    padding-top: 60px;
+    padding-bottom: 52px;
+}
+
+
+footer h4 {
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 25px;
+    font-family: "Alegreya";
+    margin-bottom: 25px;
+}
+
+footer p {
+    color: #969696;
+    font-size: 16px;
+    line-height: 1.86em;
+    margin-bottom: 20px;
+
+}
+
+.top-section li {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    margin-bottom: 6px;
+    padding-bottom: 7px;
+    color: #969696;
+}
+
+.about-us,
+.why-special,
+.Opening-Hours,
+.details {
+    float: left;
+    width: 25%;
+    padding: 0px 20px;
+
+}
+
+.buttom-section {
+    background-color: #353330;
+    padding-top: 50px;
+    text-align: center;
+    padding-bottom: 40px;
+
+}
+
+
+
+.social-icons li {
+    display: inline-block;
+    text-align: center;
+    border: #f8f8f8;
+    background-color: #403d38;
+    color: #8c8a86;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+}
+
+
+.social-icons li:hover {
+    color: white;
+}
+
+.social-icons li:nth-child(1):hover {
+    background-color: #3b5998;
+
+}
+
+.social-icons li:nth-child(2):hover {
+    background-color: red;
+
+
+}
+
+.social-icons li:nth-child(3):hover {
+    background-color: #007bb5;
+}
+
+.social-icons li:nth-child(4):hover {
+    background-color: #00aced;
+}
+
+.ic {
+    position: fixed;
+    right: 0px;
+    padding: 12px;
+    color: #666;
+    background-color: white;
+    top: 140px;
+    border-radius: 8px 0 0 8px;
+}
+
+.ic li {
+    display: block;
+    margin: 10px 0;
+    transition: 0.3s;
+}
+
+.ic li :hover {
+    color: #218fe6;
+}
+
+.buttom-section p {
+    color: #777;
+    font-size: 15px;
+    margin: 20px 0;
+}
+
+
+
+a.scrollup {
+    display: block;
+    background: rgba(0, 0, 0, 0.6);
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    color: #fff;
+    font-size: 22px;
+    line-height: 40px;
+    text-align: center;
+    text-decoration: none;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 9999;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@media screen and (min-width: 400px) and (max-width: 1350px) {
+
+
+
+    .location,
+    .contact-information {
+        background-color: black;
+    }
+
+    nav {
+        background-color: black;
+    }
+
+    .who,
+    .baking,
+    .top-section,
+    footer,
+    .buttom-section {
+        background-color: #595959;
+    }
+
+
+    .baking,
+    .who,
+    .baking,
+    .contact-details,
+    .contact-map,
+    .who figure,
+    .who-details,
+    .location figure,
+    .location-details
+    {
+        float: none;
+        width: 100%;
+    }
+
+    .about-us,
+    .why-special,
+    .Opening-Hours,
+    .details {
+        float: left;
+        width: 65%;
+
+    }
+
+    .baking-details {
+        float: left;
+        width: 60%;
+    }
+
+
+    .home header {
+        width: 100%;
+    }
+    .clear-float {
+        clear: both;
+    }
+
+
+}
